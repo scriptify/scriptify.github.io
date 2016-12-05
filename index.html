@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>scriptify</title>
+    <style>
+      html {
+        height: 100%;
+        font-size: 1em;
+        background-color: #222;
+        background-image:
+          radial-gradient(
+            hsla(0,0%,100%,.6) 40%,
+            hsla(0,0%,100%,0) 60%
+            ),
+          radial-gradient(
+            hsla(0,0%,100%,.6) 40%,
+            hsla(0,0%,100%,0) 60%
+            ),
+          radial-gradient(
+            hsla(0,0%,100%,.6) 40%,
+            hsla(0,0%,100%,0) 60%
+            ),
+          radial-gradient(
+            white 50%,
+            hsla(0,0%,100%,0) 53%
+            ),
+          radial-gradient(
+            white 50%,
+            hsla(0,0%,100%,0) 53%
+            ),
+          radial-gradient(
+            white 50%,
+            hsla(0,0%,100%,0) 53%
+            ),
+          radial-gradient(
+            white 50%,
+            hsla(0,0%,100%,0) 53%
+            ),
+          radial-gradient(
+            hsla(0,0%,100%,.6) 40%,
+            hsla(0,0%,100%,0) 60%
+            ),
+
+          radial-gradient(
+            hsl(200,80%,60%),
+            hsl(60,0%,20%)
+            );
+        background-position:
+          50% 50%,
+          calc(50% + 3em) calc(50% - .5em),
+          calc(50% + 4em) calc(50% - 1.5em),
+          calc(50% + 3em) calc(50% - 2.5em),
+          50% calc(50% - 3em),
+          calc(50% - 3em) calc(50% - 2.5em),
+          calc(50% - 4em) calc(50% - 1.5em),
+          calc(50% - 3em) calc(50% - .5em),
+
+          0 0;
+        background-size:
+          3em 3em,
+          2.5em 3em,
+          1em 3em,
+          2.5em 3em,
+          3em 3em,
+          2.5em 3em,
+          1em 3em,
+          2.5em 3em,
+
+          100% 100%;
+        background-repeat: no-repeat;
+        animation: .3s ring linear infinite reverse;
+        }
+
+
+        @keyframes ring {
+        0% {
+          background-position:
+            50% 50%,
+            calc(50% + 3em) calc(50% - .5em),
+            calc(50% + 4em) calc(50% - 1.5em),
+            calc(50% + 3em) calc(50% - 2.5em),
+            50% calc(50% - 3em),
+            calc(50% - 3em) calc(50% - 2.5em),
+            calc(50% - 4em) calc(50% - 1.5em),
+            calc(50% - 3em) calc(50% - .5em),
+
+            0 0;
+          background-size:
+            3em 3em,
+            2.5em 3em,
+            1em 3em,
+            2.5em 3em,
+            3em 3em,
+            2.5em 3em,
+            1em 3em,
+            2.5em 3em,
+
+            100% 100%;
+          }
+        100% {
+          background-position:
+            calc(50% - 3em) calc(50% - .5em),
+            50% 50%,
+            calc(50% + 3em) calc(50% - .5em),
+            calc(50% + 4em) calc(50% - 1.5em),
+            calc(50% + 3em) calc(50% - 2.5em),
+            50% calc(50% - 3em),
+            calc(50% - 3em) calc(50% - 2.5em),
+            calc(50% - 4em) calc(50% - 1.5em),
+
+            0 0;
+          background-size:
+            2.5em 3em,
+            3em 3em,
+            2.5em 3em,
+            1em 3em,
+            2.5em 3em,
+            3em 3em,
+            2.5em 3em,
+            1em 3em,
+
+            100% 100%;
+          }
+        }
+
+        .container {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+          top: 70%;
+          font-family: Ubuntu, Calibri, sans;
+          color: #FFF;
+          font-size: 14pt;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>scriptify</h1>
+      Here, someday, my homepage may appear.
+      Meanwhile, watch this fancy CSS-animation
+      by <a href="https://codepen.io/carpenumidium">carpenumidium</a>
+    </div>
+  </body>
+</html>
