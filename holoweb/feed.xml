@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[holoweb-site]]></title><description><![CDATA[holoweb-site]]></description><link>http://github.io/holoweb</link><generator>RSS for Node</generator><lastBuildDate>Mon, 09 Jan 2017 07:34:54 GMT</lastBuildDate><atom:link href="http://github.io/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Developer's guide]]></title><description><![CDATA[<h2 id="developers-guide"><a href="#developers-guide" class="phenomic-HeadingAnchor">#</a>Developer's guide</h2>
+<p>You are a developer and want to develope the <strong>HoloWeb-Apps of tomorrow</strong>? Then keep on reading.</p>
+<h3 id="requirements"><a href="#requirements" class="phenomic-HeadingAnchor">#</a>Requirements</h3>
+<ul>
+<li>You should be keen on Javascript</li>
+<li>You should know how to use at least one package manager to consume the HoloWeb-packages (e.g. npm, yarn)</li>
+<li>You should have a great idea you want to share with the rest of the world</li>
+</ul>
+<p><strong>This sounds like you?</strong> Then don't hesitate to open up your console and build something great!</p>
+<p>Of course, you also need one of those fancy pyramides!</p>
+<h3 id="getting-started"><a href="#getting-started" class="phenomic-HeadingAnchor">#</a>Getting started</h3>
+<ol>
+<li>Install the package with the package mananger of your choice!
+For Example:</li>
+</ol>
+<pre><code class="hljs language-bash">npm i -S holoweb</code></pre>
+<ol start="2">
+<li>
+<p>Consume it somehow (module bundler...).</p>
+</li>
+<li>
+<p>Build great applications! (Have a look at the documentation part)</p>
+</li>
+</ol>
+<h3 id="documentation"><a href="#documentation" class="phenomic-HeadingAnchor">#</a>Documentation</h3>
+<p>Here's a list of all exports of the module and how to use them. Sorted by importance.</p>
+<ol>
+<li><strong>setMarkup()</strong></li>
+</ol>
+<pre><code class="hljs language-javascript">setMarkup(html: <span class="hljs-built_in">String</span>, <span class="hljs-attr">element</span>: DOMElement)</code></pre>
+<p>  This function created a hologram out of your DOM-Element. Just provide some html content, which you pass as the 1° argument and a DOM-Element.</p>
+<p>  <em>Example</em></p>
+<pre><code class="hljs language-javascript">setMarkup(
+  <span class="hljs-string">`
+    &#x3C;div class="app-container">
+      HELLO WORLD
+    &#x3C;/div>
+  `</span>
+, <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">'#app'</span>));</code></pre>
+<p>  Together with template strings, this can be used very efficiently.</p>
+<ol start="2">
+<li><strong>setSize()</strong></li>
+</ol>
+<pre><code class="hljs language-javascript">setMarkup(width: <span class="hljs-built_in">Number</span>, <span class="hljs-attr">height</span>: <span class="hljs-built_in">Number</span>)</code></pre>
+<p>  This function resizes the hologram. I think there's not mucsetMarkup(width: Number, height: Number)h more to say.</p>
+<ol start="3">
+<li><strong>on()</strong></li>
+</ol>
+<pre><code class="hljs language-javascript">on(event: <span class="hljs-built_in">String</span>, <span class="hljs-attr">callback</span>: <span class="hljs-built_in">Function</span>)</code></pre>
+<p>  With this function you can setup event listeners to certain holoweb-events. Here's a list of events (this are constants which are also exported by the module, which can then be used as the first argument of the <em>on</em>-method).</p>
+<ul>
+<li>UP: Fired when the UP-Arrow of the keyboard is hit.</li>
+<li>DOWN: Fired when the DOWN-Arrow of the keyboard is hit.</li>
+<li>LEFT: Fired when the LEFT-Arrow of the keyboard is hit.</li>
+<li>RIGHT: Fired when the RIGHT-Arrow of the keyboard is hit.</li>
+<li>PRIMARY_ACTION: Fired when the SPACEBAR of the keyboard is hit.</li>
+<li>SECONDARY_ACTION: Fired when the ENTER-Button of the keyboard is hit.</li>
+</ul>
+<h3 id="implementation-for-other-frameworkslibraries"><a href="#implementation-for-other-frameworkslibraries" class="phenomic-HeadingAnchor">#</a>Implementation for other frameworks/libraries</h3>
+<p>Currently, their are no other implementations available. But you are free to write one, if you want (I currently don't have enough time, but if there's more interest in this module, I'm going to write a React-implementation).</p>
+<p>I also didn't write any other implementations, because I realized this project as a school project, and I wanted to use just VanillaJS. Of course, an implementation in e.g. React, Inferno, vue.js, ... would be way better and more efficient (also because of application structure, state managment etc.). Of course it's possible to write maintainable code with this module as-is, but all the advantages offered by libraries/frameworks can't be used. But, how I already said before, it should be possible to implement a library-/framework-specific implementation. And if you did, make a pull request!</p>
+<h2 id="example"><a href="#example" class="phenomic-HeadingAnchor">#</a>Example</h2>
+<p>I developed an example app for the HoloWeb. It's a simple clock and not fully finished, I will finish it when I have time for it. But it's good enough to demonstrate this module for now :smile:</p>
+<p>It's hosted on Github pages:</p>
+<ul>
+<li><a href="http://scriptify.github.io/hClock">scriptify.github.io</a></li>
+</ul>
+<p>And here the according repository:</p>
+<ul>
+<li><a href="https://github.com/scriptify/hClock">https://github.com/scriptify/hClock</a></li>
+</ul>
+<!-- end lipsum code -->
+]]></description><link>http://github.io/posts/dev-guide/</link><guid isPermaLink="true">http://github.io/posts/dev-guide/</guid><pubDate>Thu, 05 Jan 2017 00:00:00 GMT</pubDate></item></channel></rss>
